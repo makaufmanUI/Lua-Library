@@ -1,5 +1,9 @@
--- Function that facilitates the creation
--- of objects by defining how they are created & their properties
+----------------------------------------------------------------------------
+--                                                                        --
+--    This file contains the function definition for creating classes.    --
+--    See  class_testing.lua  for examples of usage.                      --
+--                                                                        --
+----------------------------------------------------------------------------
 function class(base, init)
     local c = {}
     if not init and type(base) == 'function' then
