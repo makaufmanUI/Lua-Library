@@ -23,24 +23,6 @@ end
 
 
 
--- Function template with variable number of arguments
-local function FindMinimumValue(...)
-    local args = {...}                  -- table containing the args
-    local minimumIndex = 1
-    local minimumValue = 100000000
-    for index,value in ipairs(args) do  -- unpack the args & do stuff
-        if value < minimumValue then
-            minimumIndex = index
-            minimumValue = value
-        end
-    end
-    return minimumIndex, minimumValue
-end
-
-
-
-
-
 -- On addon-load function and frame template with delay timer
 local function OnLoadFunction()
    -- do something 
